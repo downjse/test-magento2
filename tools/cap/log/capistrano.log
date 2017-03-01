@@ -1,0 +1,225 @@
+# Logfile created on 2017-03-01 12:12:16 -0500 by logger.rb/53938
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-01 12:12:16 -0500 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a4584c0f] Running [ -f /home/smart/public_html/test-magento-deploy/current/REVISION ] on 192.190.221.184
+ DEBUG [a4584c0f] Command: [ -f /home/smart/public_html/test-magento-deploy/current/REVISION ]
+ DEBUG [a4584c0f] Finished in 1.734 seconds with exit status 1 (failed).
+  WARN [0;31mSkipping pending changes check on 192.190.221.184 (no REVISION file found)[0m
+ DEBUG [f1f7cb62] Running [ -f /home/smart/public_html/test-magento-deploy/current/REVISION ] on 192.190.221.184
+ DEBUG [f1f7cb62] Command: [ -f /home/smart/public_html/test-magento-deploy/current/REVISION ]
+ DEBUG [f1f7cb62] Finished in 1.655 seconds with exit status 1 (failed).
+  INFO [a261b2be] Running /usr/bin/env mkdir -p /home/smart/public_html/tmp on 192.190.221.184
+ DEBUG [a261b2be] Command: /usr/bin/env mkdir -p /home/smart/public_html/tmp
+  INFO [a261b2be] Finished in 0.205 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh 0.0%
+  INFO Uploading /home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh 100.0%
+  INFO [4719f99a] Running /usr/bin/env chmod 700 /home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh on 192.190.221.184
+ DEBUG [4719f99a] Command: /usr/bin/env chmod 700 /home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh
+  INFO [4719f99a] Finished in 0.205 seconds with exit status 0 (successful).
+  INFO [8e03c211] Running /usr/bin/env git ls-remote git@github.com:downjse/test-magento.git HEAD on 192.190.221.184
+ DEBUG [8e03c211] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh" ; /usr/bin/env git ls-remote git@github.com:downjse/test-magento.git HEAD )
+ DEBUG [8e03c211] 	a5644ed62a384da4373fb4523c99cab26bdc6269	HEAD
+  INFO [8e03c211] Finished in 1.017 seconds with exit status 0 (successful).
+  INFO [f53bdff8] Running /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/shared /home/smart/public_html/test-magento-deploy/releases on 192.190.221.184
+ DEBUG [f53bdff8] Command: /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/shared /home/smart/public_html/test-magento-deploy/releases
+  INFO [f53bdff8] Finished in 0.191 seconds with exit status 0 (successful).
+  INFO [f6ba715c] Running /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/shared/pub/media /home/smart/public_html/test-magento-deploy/shared/pub/sitemaps /home/smart/public_html/test-magento-deploy/shared/var/backups /home/smart/public_html/test-magento-deploy/shared/var/composer_home /home/smart/public_html/test-magento-deploy/shared/var/importexport /home/smart/public_html/test-magento-deploy/shared/var/import_history /home/smart/public_html/test-magento-deploy/shared/var/log /home/smart/public_html/test-magento-deploy/shared/var/session /home/smart/public_html/test-magento-deploy/shared/var/tmp on 192.190.221.184
+ DEBUG [f6ba715c] Command: /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/shared/pub/media /home/smart/public_html/test-magento-deploy/shared/pub/sitemaps /home/smart/public_html/test-magento-deploy/shared/var/backups /home/smart/public_html/test-magento-deploy/shared/var/composer_home /home/smart/public_html/test-magento-deploy/shared/var/importexport /home/smart/public_html/test-magento-deploy/shared/var/import_history /home/smart/public_html/test-magento-deploy/shared/var/log /home/smart/public_html/test-magento-deploy/shared/var/session /home/smart/public_html/test-magento-deploy/shared/var/tmp
+  INFO [f6ba715c] Finished in 0.252 seconds with exit status 0 (successful).
+  INFO [db4f9321] Running /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/shared/app/etc /home/smart/public_html/test-magento-deploy/shared/var on 192.190.221.184
+ DEBUG [db4f9321] Command: /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/shared/app/etc /home/smart/public_html/test-magento-deploy/shared/var
+  INFO [db4f9321] Finished in 0.200 seconds with exit status 0 (successful).
+ DEBUG [5645f7ee] Running [ -f /home/smart/public_html/test-magento-deploy/shared/app/etc/env.php ] on 192.190.221.184
+ DEBUG [5645f7ee] Command: [ -f /home/smart/public_html/test-magento-deploy/shared/app/etc/env.php ]
+ DEBUG [5645f7ee] Finished in 0.203 seconds with exit status 1 (failed).
+  INFO [22e8a112] Running touch /home/smart/public_html/test-magento-deploy/shared/app/etc/env.php on 192.190.221.184
+ DEBUG [22e8a112] Command: touch /home/smart/public_html/test-magento-deploy/shared/app/etc/env.php
+  INFO [22e8a112] Finished in 0.207 seconds with exit status 0 (successful).
+ DEBUG [3a3418f8] Running [ -f /home/smart/public_html/test-magento-deploy/shared/var/.setup_cronjob_status ] on 192.190.221.184
+ DEBUG [3a3418f8] Command: [ -f /home/smart/public_html/test-magento-deploy/shared/var/.setup_cronjob_status ]
+ DEBUG [3a3418f8] Finished in 0.199 seconds with exit status 1 (failed).
+  INFO [08413f60] Running touch /home/smart/public_html/test-magento-deploy/shared/var/.setup_cronjob_status on 192.190.221.184
+ DEBUG [08413f60] Command: touch /home/smart/public_html/test-magento-deploy/shared/var/.setup_cronjob_status
+  INFO [08413f60] Finished in 0.196 seconds with exit status 0 (successful).
+ DEBUG [18fe4707] Running [ -f /home/smart/public_html/test-magento-deploy/shared/var/.update_cronjob_status ] on 192.190.221.184
+ DEBUG [18fe4707] Command: [ -f /home/smart/public_html/test-magento-deploy/shared/var/.update_cronjob_status ]
+ DEBUG [18fe4707] Finished in 0.206 seconds with exit status 1 (failed).
+  INFO [633cffad] Running touch /home/smart/public_html/test-magento-deploy/shared/var/.update_cronjob_status on 192.190.221.184
+ DEBUG [633cffad] Command: touch /home/smart/public_html/test-magento-deploy/shared/var/.update_cronjob_status
+  INFO [633cffad] Finished in 0.208 seconds with exit status 0 (successful).
+ DEBUG [c4244646] Running [ -f /home/smart/public_html/test-magento-deploy/shared/app/etc/env.php ] on 192.190.221.184
+ DEBUG [c4244646] Command: [ -f /home/smart/public_html/test-magento-deploy/shared/app/etc/env.php ]
+ DEBUG [c4244646] Finished in 0.201 seconds with exit status 0 (successful).
+ DEBUG [aeecfd98] Running [ -f /home/smart/public_html/test-magento-deploy/shared/var/.setup_cronjob_status ] on 192.190.221.184
+ DEBUG [aeecfd98] Command: [ -f /home/smart/public_html/test-magento-deploy/shared/var/.setup_cronjob_status ]
+ DEBUG [aeecfd98] Finished in 0.197 seconds with exit status 0 (successful).
+ DEBUG [881757da] Running [ -f /home/smart/public_html/test-magento-deploy/shared/var/.update_cronjob_status ] on 192.190.221.184
+ DEBUG [881757da] Command: [ -f /home/smart/public_html/test-magento-deploy/shared/var/.update_cronjob_status ]
+ DEBUG [881757da] Finished in 0.208 seconds with exit status 0 (successful).
+ DEBUG [43c14814] Running [ -f /home/smart/public_html/test-magento-deploy/current/REVISION ] on 192.190.221.184
+ DEBUG [43c14814] Command: [ -f /home/smart/public_html/test-magento-deploy/current/REVISION ]
+ DEBUG [43c14814] Finished in 0.198 seconds with exit status 1 (failed).
+ DEBUG [5f048d15] Running [ -f /home/smart/public_html/test-magento-deploy/repo/HEAD ] on 192.190.221.184
+ DEBUG [5f048d15] Command: [ -f /home/smart/public_html/test-magento-deploy/repo/HEAD ]
+ DEBUG [5f048d15] Finished in 0.199 seconds with exit status 1 (failed).
+ DEBUG [ab25761b] Running if test ! -d /home/smart/public_html/test-magento-deploy; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy'" 1>&2; false; fi on 192.190.221.184
+ DEBUG [ab25761b] Command: if test ! -d /home/smart/public_html/test-magento-deploy; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy'" 1>&2; false; fi
+ DEBUG [ab25761b] Finished in 0.208 seconds with exit status 0 (successful).
+  INFO [eaf00796] Running /usr/bin/env git clone --mirror git@github.com:downjse/test-magento.git /home/smart/public_html/test-magento-deploy/repo on 192.190.221.184
+ DEBUG [eaf00796] Command: cd /home/smart/public_html/test-magento-deploy && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh" ; /usr/bin/env git clone --mirror git@github.com:downjse/test-magento.git /home/smart/public_html/test-magento-deploy/repo )
+ DEBUG [eaf00796] 	Initialized empty Git repository in /home/smart/public_html/test-magento-deploy/repo/
+ DEBUG [eaf00796] 	remote: Counting objects: 2, done.[K
+remote: Total 2 (delta 0), reused 2 (delta 0), pack-reused 0[K
+Receiving objects:  50% (1/2)   Receiving objects: 100% (2/2)   Receiving objects: 100% (2/2), done.
+  INFO [eaf00796] Finished in 1.020 seconds with exit status 0 (successful).
+ DEBUG [1b5806df] Running if test ! -d /home/smart/public_html/test-magento-deploy/repo; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy/repo'" 1>&2; false; fi on 192.190.221.184
+ DEBUG [1b5806df] Command: if test ! -d /home/smart/public_html/test-magento-deploy/repo; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy/repo'" 1>&2; false; fi
+ DEBUG [1b5806df] Finished in 0.196 seconds with exit status 0 (successful).
+  INFO [c9553567] Running /usr/bin/env git remote set-url origin git@github.com:downjse/test-magento.git on 192.190.221.184
+ DEBUG [c9553567] Command: cd /home/smart/public_html/test-magento-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh" ; /usr/bin/env git remote set-url origin git@github.com:downjse/test-magento.git )
+  INFO [c9553567] Finished in 0.209 seconds with exit status 0 (successful).
+  INFO [cddc6e24] Running /usr/bin/env git remote update --prune on 192.190.221.184
+ DEBUG [cddc6e24] Command: cd /home/smart/public_html/test-magento-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [cddc6e24] 	Fetching origin
+  INFO [cddc6e24] Finished in 0.968 seconds with exit status 0 (successful).
+ DEBUG [f84fd451] Running if test ! -d /home/smart/public_html/test-magento-deploy/repo; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy/repo'" 1>&2; false; fi on 192.190.221.184
+ DEBUG [f84fd451] Command: if test ! -d /home/smart/public_html/test-magento-deploy/repo; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy/repo'" 1>&2; false; fi
+ DEBUG [f84fd451] Finished in 0.246 seconds with exit status 0 (successful).
+  INFO [1472520f] Running /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/releases/20170301171226 on 192.190.221.184
+ DEBUG [1472520f] Command: cd /home/smart/public_html/test-magento-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh" ; /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/releases/20170301171226 )
+  INFO [1472520f] Finished in 0.201 seconds with exit status 0 (successful).
+  INFO [26f4804e] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/smart/public_html/test-magento-deploy/releases/20170301171226 on 192.190.221.184
+ DEBUG [26f4804e] Command: cd /home/smart/public_html/test-magento-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/smart/public_html/test-magento-deploy/releases/20170301171226 )
+  INFO [26f4804e] Finished in 0.205 seconds with exit status 0 (successful).
+ DEBUG [daf7489a] Running if test ! -d /home/smart/public_html/test-magento-deploy/repo; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy/repo'" 1>&2; false; fi on 192.190.221.184
+ DEBUG [daf7489a] Command: if test ! -d /home/smart/public_html/test-magento-deploy/repo; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy/repo'" 1>&2; false; fi
+ DEBUG [daf7489a] Finished in 0.186 seconds with exit status 0 (successful).
+ DEBUG [6eed91bc] Running /usr/bin/env git rev-list --max-count=1 master on 192.190.221.184
+ DEBUG [6eed91bc] Command: cd /home/smart/public_html/test-magento-deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/smart/public_html/tmp/git-ssh-test-magento-staging-jjbdo.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [6eed91bc] 	a5644ed62a384da4373fb4523c99cab26bdc6269
+ DEBUG [6eed91bc] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [d3e2d093] Running if test ! -d /home/smart/public_html/test-magento-deploy/releases/20170301171226; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy/releases/20170301171226'" 1>&2; false; fi on 192.190.221.184
+ DEBUG [d3e2d093] Command: if test ! -d /home/smart/public_html/test-magento-deploy/releases/20170301171226; then echo "Directory does not exist '/home/smart/public_html/test-magento-deploy/releases/20170301171226'" 1>&2; false; fi
+ DEBUG [d3e2d093] Finished in 0.269 seconds with exit status 0 (successful).
+  INFO [db3d5561] Running /usr/bin/env echo "a5644ed62a384da4373fb4523c99cab26bdc6269" >> REVISION on 192.190.221.184
+ DEBUG [db3d5561] Command: cd /home/smart/public_html/test-magento-deploy/releases/20170301171226 && /usr/bin/env echo "a5644ed62a384da4373fb4523c99cab26bdc6269" >> REVISION
+  INFO [db3d5561] Finished in 0.203 seconds with exit status 0 (successful).
+  INFO [7b3bd279] Running /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc /home/smart/public_html/test-magento-deploy/releases/20170301171226/var on 192.190.221.184
+ DEBUG [7b3bd279] Command: /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc /home/smart/public_html/test-magento-deploy/releases/20170301171226/var
+  INFO [7b3bd279] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [bd9681d3] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc/env.php ] on 192.190.221.184
+ DEBUG [bd9681d3] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc/env.php ]
+ DEBUG [bd9681d3] Finished in 0.212 seconds with exit status 1 (failed).
+ DEBUG [e08f05a2] Running [ -f /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc/env.php ] on 192.190.221.184
+ DEBUG [e08f05a2] Command: [ -f /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc/env.php ]
+ DEBUG [e08f05a2] Finished in 0.197 seconds with exit status 1 (failed).
+  INFO [6ee58acb] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/app/etc/env.php /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc/env.php on 192.190.221.184
+ DEBUG [6ee58acb] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/app/etc/env.php /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc/env.php
+  INFO [6ee58acb] Finished in 0.205 seconds with exit status 0 (successful).
+ DEBUG [765df8ca] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.setup_cronjob_status ] on 192.190.221.184
+ DEBUG [765df8ca] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.setup_cronjob_status ]
+ DEBUG [765df8ca] Finished in 0.206 seconds with exit status 1 (failed).
+ DEBUG [5f80624a] Running [ -f /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.setup_cronjob_status ] on 192.190.221.184
+ DEBUG [5f80624a] Command: [ -f /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.setup_cronjob_status ]
+ DEBUG [5f80624a] Finished in 0.199 seconds with exit status 1 (failed).
+  INFO [833967ff] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/.setup_cronjob_status /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.setup_cronjob_status on 192.190.221.184
+ DEBUG [833967ff] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/.setup_cronjob_status /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.setup_cronjob_status
+  INFO [833967ff] Finished in 0.204 seconds with exit status 0 (successful).
+ DEBUG [2f80ecfd] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.update_cronjob_status ] on 192.190.221.184
+ DEBUG [2f80ecfd] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.update_cronjob_status ]
+ DEBUG [2f80ecfd] Finished in 0.196 seconds with exit status 1 (failed).
+ DEBUG [c58265c7] Running [ -f /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.update_cronjob_status ] on 192.190.221.184
+ DEBUG [c58265c7] Command: [ -f /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.update_cronjob_status ]
+ DEBUG [c58265c7] Finished in 0.207 seconds with exit status 1 (failed).
+  INFO [e259047e] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/.update_cronjob_status /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.update_cronjob_status on 192.190.221.184
+ DEBUG [e259047e] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/.update_cronjob_status /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/.update_cronjob_status
+  INFO [e259047e] Finished in 0.208 seconds with exit status 0 (successful).
+  INFO [053a1ab6] Running /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub /home/smart/public_html/test-magento-deploy/releases/20170301171226/var on 192.190.221.184
+ DEBUG [053a1ab6] Command: /usr/bin/env mkdir -p /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub /home/smart/public_html/test-magento-deploy/releases/20170301171226/var
+  INFO [053a1ab6] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [207a784b] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/media ] on 192.190.221.184
+ DEBUG [207a784b] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/media ]
+ DEBUG [207a784b] Finished in 0.205 seconds with exit status 1 (failed).
+ DEBUG [e841e70f] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/media ] on 192.190.221.184
+ DEBUG [e841e70f] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/media ]
+ DEBUG [e841e70f] Finished in 0.199 seconds with exit status 1 (failed).
+  INFO [c9480a57] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/pub/media /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/media on 192.190.221.184
+ DEBUG [c9480a57] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/pub/media /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/media
+  INFO [c9480a57] Finished in 0.204 seconds with exit status 0 (successful).
+ DEBUG [500716da] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/sitemaps ] on 192.190.221.184
+ DEBUG [500716da] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/sitemaps ]
+ DEBUG [500716da] Finished in 0.205 seconds with exit status 1 (failed).
+ DEBUG [646e2aa7] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/sitemaps ] on 192.190.221.184
+ DEBUG [646e2aa7] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/sitemaps ]
+ DEBUG [646e2aa7] Finished in 0.203 seconds with exit status 1 (failed).
+  INFO [fbd05ffb] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/pub/sitemaps /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/sitemaps on 192.190.221.184
+ DEBUG [fbd05ffb] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/pub/sitemaps /home/smart/public_html/test-magento-deploy/releases/20170301171226/pub/sitemaps
+  INFO [fbd05ffb] Finished in 0.199 seconds with exit status 0 (successful).
+ DEBUG [a2d0b3c6] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/backups ] on 192.190.221.184
+ DEBUG [a2d0b3c6] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/backups ]
+ DEBUG [a2d0b3c6] Finished in 0.206 seconds with exit status 1 (failed).
+ DEBUG [20dc7cdd] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/backups ] on 192.190.221.184
+ DEBUG [20dc7cdd] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/backups ]
+ DEBUG [20dc7cdd] Finished in 0.195 seconds with exit status 1 (failed).
+  INFO [dd016aa3] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/backups /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/backups on 192.190.221.184
+ DEBUG [dd016aa3] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/backups /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/backups
+  INFO [dd016aa3] Finished in 0.208 seconds with exit status 0 (successful).
+ DEBUG [a339f4a1] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/composer_home ] on 192.190.221.184
+ DEBUG [a339f4a1] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/composer_home ]
+ DEBUG [a339f4a1] Finished in 0.196 seconds with exit status 1 (failed).
+ DEBUG [4bd9226d] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/composer_home ] on 192.190.221.184
+ DEBUG [4bd9226d] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/composer_home ]
+ DEBUG [4bd9226d] Finished in 0.132 seconds with exit status 1 (failed).
+  INFO [69f35164] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/composer_home /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/composer_home on 192.190.221.184
+ DEBUG [69f35164] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/composer_home /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/composer_home
+  INFO [69f35164] Finished in 0.175 seconds with exit status 0 (successful).
+ DEBUG [2aac6ce2] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/importexport ] on 192.190.221.184
+ DEBUG [2aac6ce2] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/importexport ]
+ DEBUG [2aac6ce2] Finished in 0.195 seconds with exit status 1 (failed).
+ DEBUG [07f61fb2] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/importexport ] on 192.190.221.184
+ DEBUG [07f61fb2] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/importexport ]
+ DEBUG [07f61fb2] Finished in 0.220 seconds with exit status 1 (failed).
+  INFO [0a061828] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/importexport /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/importexport on 192.190.221.184
+ DEBUG [0a061828] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/importexport /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/importexport
+  INFO [0a061828] Finished in 0.190 seconds with exit status 0 (successful).
+ DEBUG [a8f15bbd] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/import_history ] on 192.190.221.184
+ DEBUG [a8f15bbd] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/import_history ]
+ DEBUG [a8f15bbd] Finished in 0.206 seconds with exit status 1 (failed).
+ DEBUG [99dcc623] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/import_history ] on 192.190.221.184
+ DEBUG [99dcc623] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/import_history ]
+ DEBUG [99dcc623] Finished in 0.196 seconds with exit status 1 (failed).
+  INFO [3b47a00a] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/import_history /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/import_history on 192.190.221.184
+ DEBUG [3b47a00a] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/import_history /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/import_history
+  INFO [3b47a00a] Finished in 0.205 seconds with exit status 0 (successful).
+ DEBUG [eb427258] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/log ] on 192.190.221.184
+ DEBUG [eb427258] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/log ]
+ DEBUG [eb427258] Finished in 0.206 seconds with exit status 1 (failed).
+ DEBUG [2837a6c6] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/log ] on 192.190.221.184
+ DEBUG [2837a6c6] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/log ]
+ DEBUG [2837a6c6] Finished in 0.202 seconds with exit status 1 (failed).
+  INFO [621afd40] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/log /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/log on 192.190.221.184
+ DEBUG [621afd40] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/log /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/log
+  INFO [621afd40] Finished in 0.202 seconds with exit status 0 (successful).
+ DEBUG [91fa28fa] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/session ] on 192.190.221.184
+ DEBUG [91fa28fa] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/session ]
+ DEBUG [91fa28fa] Finished in 0.197 seconds with exit status 1 (failed).
+ DEBUG [9c63aa79] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/session ] on 192.190.221.184
+ DEBUG [9c63aa79] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/session ]
+ DEBUG [9c63aa79] Finished in 0.203 seconds with exit status 1 (failed).
+  INFO [e384a870] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/session /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/session on 192.190.221.184
+ DEBUG [e384a870] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/session /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/session
+  INFO [e384a870] Finished in 0.209 seconds with exit status 0 (successful).
+ DEBUG [b99a5704] Running [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/tmp ] on 192.190.221.184
+ DEBUG [b99a5704] Command: [ -L /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/tmp ]
+ DEBUG [b99a5704] Finished in 0.201 seconds with exit status 1 (failed).
+ DEBUG [bac1b45b] Running [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/tmp ] on 192.190.221.184
+ DEBUG [bac1b45b] Command: [ -d /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/tmp ]
+ DEBUG [bac1b45b] Finished in 0.204 seconds with exit status 1 (failed).
+  INFO [5db786b0] Running /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/tmp /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/tmp on 192.190.221.184
+ DEBUG [5db786b0] Command: /usr/bin/env ln -s /home/smart/public_html/test-magento-deploy/shared/var/tmp /home/smart/public_html/test-magento-deploy/releases/20170301171226/var/tmp
+  INFO [5db786b0] Finished in 0.197 seconds with exit status 0 (successful).
+ DEBUG [30fd01ee] Running [ -f /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc/config.php ] on 192.190.221.184
+ DEBUG [30fd01ee] Command: [ -f /home/smart/public_html/test-magento-deploy/releases/20170301171226/app/etc/config.php ]
+ DEBUG [30fd01ee] Finished in 0.198 seconds with exit status 1 (failed).
+ ERROR [0;31mThe repository is missing app/etc/config.php. Please install the application and retry![0m
